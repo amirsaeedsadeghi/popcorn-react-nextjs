@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This single-page website is built with `React` and `Next.js v14.2` as a complete web application.
 
-## Getting Started
+## In Next.js, the `App Router` method is utilized. Therefore, components are considered as server components and client components.
 
-First, run the development server:
+### To enhance user experience and provide a different way of fetching data compared to the previous version, pagination is implemented as `infinite scrolling`. Consequently, data fetching occurs on the client side.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### For managing `global state`, the `Context API` is used to handle information about watched movies and the selected movie across the application.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Management of watched movies is done locally using a `custom hook` named `useLocalStorageState`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Styling is achieved using `Tailwind CSS` to differentiate it from the previous application and to leverage some of its attractive features.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### All information is fetched and processed from the `API` created by `TMDB`.
 
-## Learn More
+### The ability to search for movies by title has been added to the application by entering the name in the search section, with results displayed in `real-time`.
 
-To learn more about Next.js, take a look at the following resources:
+### To provide a more pleasant user experience, users can also vote for their desired movies and add them to their list.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Note:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- The page design is fully responsive.
